@@ -32,7 +32,7 @@ var isDelete bool
 var duplicateCmd = &cobra.Command{
 	Use:   "duplicate",
 	Short: "Find duplicate and delete easily",
-	Long:  `find-duplicate a simple CLI tool which is help you for find the duplicate files and delete them. `,
+	Long:  `find-duplicates a simple CLI tool which is help you for find the duplicate files and delete them. `,
 	Args:  cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		getFiles(args[0])

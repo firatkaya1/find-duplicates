@@ -28,7 +28,7 @@ var cfgFile string
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "findDuplicate",
+	Use:   "find-duplicates",
 	Short: "A best CLI for delete duplicate files.",
 
 	// Uncomment the following line if your bare application
@@ -65,7 +65,7 @@ func initConfig() {
 
 		// Search config in home directory with name ".findDuplicate" (without extension).
 		viper.AddConfigPath(home)
-		viper.SetConfigName(".findDuplicate")
+		viper.SetConfigName(".find-duplicate")
 	}
 
 	viper.AutomaticEnv() // read in environment variables that match
