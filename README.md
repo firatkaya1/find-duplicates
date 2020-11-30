@@ -175,3 +175,15 @@ Mevcut tüm komutları görebilmek istiyorsanız help komutunu kullanabilirsiniz
 ```
 find-duplicates help
 ```
+
+# Komutu bilgisayarımdan nasıl kaldırabilirim ? 
+Build ettiğimiz dosyayı /bin klasörüne kopyalamıştık. Yapmanız gereken tek şey /bin klasörü altındaki find-duplicates dosyasını bulup silmektir. Bunu terminal ekranından aşağıdaki komut ile yapabilirsiniz.
+
+```
+sudo rm /bin/find-duplicates
+```
+---
+Bir problemle karşılaşırsanız bana yazabilirsiniz. 
+
+[me@kayafirat.com](mailto:me@kayafirat.com?subject=[GitHub]%20find-duplicate)
+
