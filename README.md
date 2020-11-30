@@ -59,10 +59,10 @@ Artık terminal'den dosyanın kendisi olmadan çalıştırabilir ve kullanabilir
 
 # Nasıl Kullanılır ? 
 
-Bir kullanıcı senaryosuna göre yanlışlıkla aynı dosyadan birden fazla kopyaladığınızı gördünüz. Sonuç olarak bu kopyalanmış dosyaları silmek istiyorsunuz. 
-Dosyanızın adı images olsun. 
+Bir kullanıcı senaryosuna göre yanlışlıkla aynı dosyadan birden fazla kopyalandığını gördünüz. Sonuç olarak bu kopyalanmış dosyaları silmek istiyorsunuz. Dosyanızın adı images olsun. Bu klasörün altında ise hem kopyalanmış hem de orijinal dosyalar olduğunu farz edelim.
+
 ### Adım 1 
-Aşağıda gördüğünüz **-delete** değeri, kopyalanan dosyaların direk silineceğini mi yoksa sadece gösterileceğinimi belirtir. Default değeri false'dir.
+Aşağıda gördüğünüz **-delete** değeri, kopyalanan dosyaların direk silineceğini mi yoksa sadece gösterileceğini mi belirtir. Default değeri false'dir.
 Eğer ki sadece dosyaların gösterilmesini istiyorsak, aşağıdaki şekilde terminal ekranına yapıştırın. */home/kaya/Desktop/images* benim kendi path'imi ifade ediyor.
 Bunu kendinize uygun düzenleyin.
 ```
@@ -100,13 +100,13 @@ Total Unique Files : 4
 Total Duplicate Files : 24
 
 ```
-Görebildiğiniz üzere en altta ufak bir sonuç çıkarmaktadır. Herhangibir dosya silme işlemi olmadığı için Silinen toplam dosya sayısı istatistiği bulunmaz.   
-**Total Scanned Files** : Toplam taranan dosyayıyı ifade eder.   
-**Total Unique Files** : Aslında olması gereken dosya sayısını ifade eder.  
-**Total Duplicate Files** : Orjinal dosyaların dışında kalan kopyalanmış dosyaları ifade eder.   
-Burada 28 dosya taranmış, sadece 4 orjinal dosya bulunmuş ve geri kalanların hepsi de varolan 4 orjinal dosyanın kopyasıdır.   
+Görebildiğiniz üzere en altta ufak bir sonuç çıkarmaktadır. Herhangi bir dosya silme işlemi olmadığı için Silinen toplam dosya sayısı istatistiği bulunmaz.
+**Total Scanned Files** : Toplam taranan dosyayı ifade eder.
+**Total Unique Files** : Aslında olması gereken dosya sayısını ifade eder.
+**Total Duplicate Files** : Orijinal dosyaların dışında kalan kopyalanmış dosyaları ifade eder.
+Burada 28 dosya taranmış, sadece 4 orijinal dosya bulunmuş ve geri kalanların hepsi de varolan 4 orijinal dosyanın kopyasıdır.
 
-Eğer ki dosyaları silmek istiyorsanız aşağıdaki komutu çalıştırın. Bir önceki komuttan tek farkı, delete değerini true vermemizdir. Alternatif olarak 
+Eğer ki dosyaları silmek istiyorsanız aşağıdaki komutu çalıştırın. Bir önceki komuttan tek farkı, delete değerini true vermemizdir. Alternatif olarak
 **-d=true** da tercih edebilirsiniz.
 
 ```
