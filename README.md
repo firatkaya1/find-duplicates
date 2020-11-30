@@ -61,6 +61,92 @@ Artık terminal'den dosyanın kendisi olmadan çalıştırabilir ve kullanabilir
 
 ### Nasıl Kullanılır ? 
 
+Bir kullanıcı senaryosuna göre yanlışlıkla aynı dosyadan birden fazla kopyaladığınızı gördünüz. Sonuç olarak bu kopyalanmış dosyaları silmek istiyorsunuz. 
+Dosyanızın adı images olsun. 
+### Adım 1 
+Aşağıda gördüğünüz -delete değeri, kopyalanan dosyaların direk silineceğini mi yoksa sadece gösterileceğinimi belirtir. Default değeri false'dir.
+Eğer ki sadece dosyaların gösterilmesini istiyorsak, aşağıdaki şekilde terminal ekranına yapıştırın. *home/desktop/images* benim kendi path'imi ifade ediyor.
+Bunu kendinize uygun düzenleyin.
+```
+find-duplicates duplicate /home/desktop/images  -delete=false
+```
+Örnek çıktı : 
+
+```
+Duplicate File : /home/kaya/Desktop/images/instagram (4th copy).png
+Duplicate File : /home/kaya/Desktop/images/instagram (copy).png
+Duplicate File : /home/kaya/Desktop/images/twitter (3rd copy).png
+Duplicate File : /home/kaya/Desktop/images/twitter (5th copy).png
+Duplicate File : /home/kaya/Desktop/images/facebook (another copy).png
+Duplicate File : /home/kaya/Desktop/images/whatsapp (5th copy).png
+Duplicate File : /home/kaya/Desktop/images/whatsapp (6th copy).png
+Duplicate File : /home/kaya/Desktop/images/facebook (3rd copy).png
+Duplicate File : /home/kaya/Desktop/images/facebook (4th copy).png
+Duplicate File : /home/kaya/Desktop/images/facebook (6th copy).png
+Duplicate File : /home/kaya/Desktop/images/instagram (3rd copy).png
+Duplicate File : /home/kaya/Desktop/images/twitter (another copy).png
+Duplicate File : /home/kaya/Desktop/images/twitter (copy).png
+Duplicate File : /home/kaya/Desktop/images/whatsapp (another copy).png
+Duplicate File : /home/kaya/Desktop/images/facebook (copy).png
+Duplicate File : /home/kaya/Desktop/images/instagram (6th copy).png
+Duplicate File : /home/kaya/Desktop/images/whatsapp (4th copy).png
+Duplicate File : /home/kaya/Desktop/images/facebook (5th copy).png
+Duplicate File : /home/kaya/Desktop/images/whatsapp (copy).png
+Duplicate File : /home/kaya/Desktop/images/instagram (5th copy).png
+Duplicate File : /home/kaya/Desktop/images/twitter (4th copy).png
+Duplicate File : /home/kaya/Desktop/images/twitter (6th copy).png
+Duplicate File : /home/kaya/Desktop/images/instagram (another copy).png
+Duplicate File : /home/kaya/Desktop/images/whatsapp (3rd copy).png
+Total Scanned Files : 28
+Total Unique Files : 4
+Total Duplicate Files : 24
+
+```
+Görebildiğiniz üzere en altta ufak bir sonuç çıkarmaktadır. Herhangibir dosya silme işlemi olmadığı için Silinen toplam dosya sayısı istatistiği bulunmaz. 
+Total Scanned Files : Toplam taranan dosyayıyı ifade eder. 
+Total Unique Files : Aslında olması gereken dosya sayısını ifade eder.
+Total Duplicate Files : Orjinal dosyaların dışında kalan kopyalanmış dosyaları ifade eder. 
+Burada 28 dosya taranmış, sadece 4 orjinal dosya bulunmuş ve geri kalanların hepsi de varolan 4 orjinal dosyanın kopyasıdır. 
+
+Eğer ki dosyaları silmek istiyorsanız aşağıdaki komutu çalıştırın. Bir önceki komuttan tek farkı, delete değerini true vermemizdir. Alternatif olarak 
+**-d=true** da tercih edebilirsiniz.
+
+```
+find-duplicates duplicate /home/desktop/images  -delete=true
+
+```
+Örnek çıktı : 
+```
+Duplicate File : /home/kaya/Desktop/images/facebook (3rd copy).png
+Duplicate File : /home/kaya/Desktop/images/twitter (4th copy).png
+Duplicate File : /home/kaya/Desktop/images/twitter (another copy).png
+Duplicate File : /home/kaya/Desktop/images/instagram (5th copy).png
+Duplicate File : /home/kaya/Desktop/images/whatsapp (3rd copy).png
+Duplicate File : /home/kaya/Desktop/images/facebook (5th copy).png
+Duplicate File : /home/kaya/Desktop/images/facebook (6th copy).png
+Duplicate File : /home/kaya/Desktop/images/instagram (4th copy).png
+Duplicate File : /home/kaya/Desktop/images/twitter (5th copy).png
+Duplicate File : /home/kaya/Desktop/images/whatsapp (4th copy).png
+Duplicate File : /home/kaya/Desktop/images/instagram (another copy).png
+Duplicate File : /home/kaya/Desktop/images/twitter (6th copy).png
+Duplicate File : /home/kaya/Desktop/images/facebook (another copy).png
+Duplicate File : /home/kaya/Desktop/images/facebook (copy).png
+Duplicate File : /home/kaya/Desktop/images/instagram (copy).png
+Duplicate File : /home/kaya/Desktop/images/twitter (3rd copy).png
+Duplicate File : /home/kaya/Desktop/images/whatsapp (5th copy).png
+Duplicate File : /home/kaya/Desktop/images/whatsapp (copy).png
+Duplicate File : /home/kaya/Desktop/images/facebook (4th copy).png
+Duplicate File : /home/kaya/Desktop/images/instagram (3rd copy).png
+Duplicate File : /home/kaya/Desktop/images/instagram (6th copy).png
+Duplicate File : /home/kaya/Desktop/images/twitter (copy).png
+Duplicate File : /home/kaya/Desktop/images/whatsapp (6th copy).png
+Duplicate File : /home/kaya/Desktop/images/whatsapp (another copy).png
+Total Scanned Files : 28
+Total Unique Files : 4
+Total Duplicate Files : 24
+Total Deleted Files : 24
+```
+Eski çıktıdan tek farkı burada toplam silinen dosya sayısının da bulunmasıdır. Total Deleted Files, silinen kopya dosyaları ifade eder. 
 
 
 
