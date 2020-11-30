@@ -100,7 +100,7 @@ Total Unique Files : 4
 Total Duplicate Files : 24
 
 ```
-Görebildiğiniz üzere en altta ufak bir sonuç çıkarmaktadır. Herhangi bir dosya silme işlemi olmadığı için Silinen toplam dosya sayısı istatistiği bulunmaz.
+Görebildiğiniz üzere en altta ufak bir istatistik çıkmaktadır. Herhangi bir dosya silme işlemi olmadığı için silinen toplam dosya sayısı istatistiği bulunmaz.
 **Total Scanned Files** : Toplam taranan dosyayı ifade eder.
 **Total Unique Files** : Aslında olması gereken dosya sayısını ifade eder.
 **Total Duplicate Files** : Orijinal dosyaların dışında kalan kopyalanmış dosyaları ifade eder.
