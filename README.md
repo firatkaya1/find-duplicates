@@ -1,9 +1,8 @@
 # find-duplicates
-A simple CLI for find duplicate files and delete
-## Nedir ? 
+# Nedir ? 
 find-duplicates terminal üzerinde çalışan, belirtildiği hedef alandaki tekrarlı dosyaları bulup silinmesini sağlayan basit bir komuttur. 
 
-## Nasıl Kurulur ?
+# Nasıl Kurulur ?
 
 ### Adım 1
 Github repositoriden proje linkini kopyalayın ve kendi bilgisayarınıza indirin.  
@@ -59,16 +58,16 @@ sudo cp find-duplicates /bin
 ### Bitti. 
 Artık terminal'den dosyanın kendisi olmadan çalıştırabilir ve kullanabilirsiniz. 
 
-### Nasıl Kullanılır ? 
+# Nasıl Kullanılır ? 
 
 Bir kullanıcı senaryosuna göre yanlışlıkla aynı dosyadan birden fazla kopyaladığınızı gördünüz. Sonuç olarak bu kopyalanmış dosyaları silmek istiyorsunuz. 
 Dosyanızın adı images olsun. 
 ### Adım 1 
-Aşağıda gördüğünüz -delete değeri, kopyalanan dosyaların direk silineceğini mi yoksa sadece gösterileceğinimi belirtir. Default değeri false'dir.
-Eğer ki sadece dosyaların gösterilmesini istiyorsak, aşağıdaki şekilde terminal ekranına yapıştırın. *home/desktop/images* benim kendi path'imi ifade ediyor.
+Aşağıda gördüğünüz **-delete** değeri, kopyalanan dosyaların direk silineceğini mi yoksa sadece gösterileceğinimi belirtir. Default değeri false'dir.
+Eğer ki sadece dosyaların gösterilmesini istiyorsak, aşağıdaki şekilde terminal ekranına yapıştırın. */home/kaya/Desktop/images* benim kendi path'imi ifade ediyor.
 Bunu kendinize uygun düzenleyin.
 ```
-find-duplicates duplicate /home/desktop/images  -delete=false
+find-duplicates duplicate /home/kaya/Desktop/images  -delete=false
 ```
 Örnek çıktı : 
 
@@ -102,17 +101,17 @@ Total Unique Files : 4
 Total Duplicate Files : 24
 
 ```
-Görebildiğiniz üzere en altta ufak bir sonuç çıkarmaktadır. Herhangibir dosya silme işlemi olmadığı için Silinen toplam dosya sayısı istatistiği bulunmaz. 
-Total Scanned Files : Toplam taranan dosyayıyı ifade eder. 
-Total Unique Files : Aslında olması gereken dosya sayısını ifade eder.
-Total Duplicate Files : Orjinal dosyaların dışında kalan kopyalanmış dosyaları ifade eder. 
-Burada 28 dosya taranmış, sadece 4 orjinal dosya bulunmuş ve geri kalanların hepsi de varolan 4 orjinal dosyanın kopyasıdır. 
+Görebildiğiniz üzere en altta ufak bir sonuç çıkarmaktadır. Herhangibir dosya silme işlemi olmadığı için Silinen toplam dosya sayısı istatistiği bulunmaz.   
+**Total Scanned Files** : Toplam taranan dosyayıyı ifade eder.   
+**Total Unique Files** : Aslında olması gereken dosya sayısını ifade eder.  
+**Total Duplicate Files** : Orjinal dosyaların dışında kalan kopyalanmış dosyaları ifade eder.   
+Burada 28 dosya taranmış, sadece 4 orjinal dosya bulunmuş ve geri kalanların hepsi de varolan 4 orjinal dosyanın kopyasıdır.   
 
 Eğer ki dosyaları silmek istiyorsanız aşağıdaki komutu çalıştırın. Bir önceki komuttan tek farkı, delete değerini true vermemizdir. Alternatif olarak 
 **-d=true** da tercih edebilirsiniz.
 
 ```
-find-duplicates duplicate /home/desktop/images  -delete=true
+find-duplicates duplicate /home/kaya/Desktop/images  -delete=true
 
 ```
 Örnek çıktı : 
@@ -146,7 +145,8 @@ Total Unique Files : 4
 Total Duplicate Files : 24
 Total Deleted Files : 24
 ```
-Eski çıktıdan tek farkı burada toplam silinen dosya sayısının da bulunmasıdır. Total Deleted Files, silinen kopya dosyaları ifade eder. 
+Eski çıktıdan tek farkı burada toplam silinen dosya sayısının da bulunmasıdır.  
+**Total Deleted Files**: Silinen kopya dosyaları ifade eder. 
 
 
 
