@@ -1,5 +1,5 @@
 /*
-Copyright © 2020 NAME HERE <EMAIL ADDRESS>
+Copyright © 2020 FIRAT KAYA <firat.kaya@mail.com>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@ var isDelete bool
 var duplicateCmd = &cobra.Command{
 	Use:   "duplicate",
 	Short: "Find duplicate and delete easily",
-	Long:  `Find duplicator a simple CLI tool which is help you for find the duplicate files and delete them. `,
+	Long:  `find-duplicate a simple CLI tool which is help you for find the duplicate files and delete them. `,
 	Args:  cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		getFiles(args[0])
@@ -41,8 +41,7 @@ var duplicateCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(duplicateCmd)
-	duplicateCmd.PersistentFlags().BoolVarP(&isDelete, "delete", "d", false, "verbose output")
-	duplicateCmd.MarkFlagRequired("delete")
+	duplicateCmd.PersistentFlags().BoolVarP(&isDelete, "delete", "d", false, "-delete=true|false")
 
 }
 func getFiles(str string) {
@@ -74,15 +73,15 @@ func getFiles(str string) {
 	}
 
 	/*
-		İf a key exists in wilDelete(map) value,
-		then just delete element in willDelete list,
-	    For example let we just thing we have 4 jpeg files.
-	    dream1.jpeg, dream2.jpeg,dream3.jpeg,dream4.jpeg
-		I created two map 1- uniqueList 2-willDelete
-		uniqueList's key is sha256 and value is path, willDelete is opposite.
-		İf uniqueList's key which is sha256 contains willDelete's value which is same, then delete willDelete
-		because we are saying, this file is unique, do not delete.
-		After the uniqueList length, we have non-unique-files to delete.
+			İf a key exists in wilDelete(map) value,
+			then just delete element in willDelete list,
+		    For example let we just thing we have 4 jpeg files.
+		    dream1.jpeg, dream2.jpeg,dream3.jpeg,dream4.jpeg
+			I created two map 1- uniqueList 2-willDelete
+			uniqueList's key is sha256 and value is path, willDelete is opposite.
+			İf uniqueList's key which is sha256 contains willDelete's value which is same, then delete willDelete
+			because we are saying, this file is unique, do not delete.
+			After the uniqueList length, we have non-unique-files to delete.
 	*/
 
 	for a := range uniqueList {
@@ -97,7 +96,7 @@ func getFiles(str string) {
 	for i := range willDelete {
 		fmt.Println("Duplicate File :", i)
 		if isDelete {
-			os.Remove(i)
+			_ = os.Remove(i)
 		}
 	}
 	fmt.Println("Total Scanned Files :", len(uniqueList)+len(willDelete))

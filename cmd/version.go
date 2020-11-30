@@ -1,5 +1,5 @@
 /*
-Copyright © 2020 NAME HERE <EMAIL ADDRESS>
+Copyright © 2020 FIRAT KAYA <firat.kaya@mail.com>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ var versionCmd = &cobra.Command{
 	Use:   "version",
 	Short: "This command will return project version.",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Dublicator version number is @1.0.0")
+		fmt.Println("find-duplicate version number is @1.0.0")
 	},
 }
 

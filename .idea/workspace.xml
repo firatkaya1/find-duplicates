@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="daa512af-03bf-456c-ac9d-7a52bc4ec891" name="Default Changelist" comment="first commit" />
+    <list default="true" id="daa512af-03bf-456c-ac9d-7a52bc4ec891" name="Default Changelist" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/author.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/author.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/dublicate.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/dublicate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/license.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/license.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/root.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/root.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/version.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/version.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findDublicate" beforeDir="false" afterPath="$PROJECT_DIR$/findDublicate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,10 +73,10 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="595" y="300" width="400" height="334" key="#Go_Modules/0.27.1600.873@0.27.1600.873" timestamp="1606482352458" />
-    <state x="150" y="103" width="1280" height="735" key="DiffContextDialog" timestamp="1606748396718">
+    <state x="150" y="103" width="1280" height="735" key="DiffContextDialog" timestamp="1606748416075">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="150" y="103" width="1280" height="735" key="DiffContextDialog/0.27.1600.873@0.27.1600.873" timestamp="1606748396718" />
+    <state x="150" y="103" width="1280" height="735" key="DiffContextDialog/0.27.1600.873@0.27.1600.873" timestamp="1606748416075" />
     <state width="1554" height="554" key="GridCell.Tab.0.bottom" timestamp="1606747055041">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
@@ -84,9 +93,9 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state width="1554" height="554" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1606747055040" />
-    <state x="395" y="199" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606748397827">
+    <state x="395" y="199" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606748418173">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="395" y="199" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1600.873@0.27.1600.873" timestamp="1606748397827" />
+    <state x="395" y="199" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1600.873@0.27.1600.873" timestamp="1606748418173" />
   </component>
 </project>

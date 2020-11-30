@@ -1,5 +1,5 @@
 /*
-Copyright © 2020 NAME HERE <EMAIL ADDRESS>
+Copyright © 2020 FIRAT KAYA <firat.kaya@mail.com>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import (
 	"github.com/spf13/cobra"
 	"os"
 
-	homedir "github.com/mitchellh/go-homedir"
+	"github.com/mitchellh/go-homedir"
 	"github.com/spf13/viper"
 )
 
@@ -28,8 +28,8 @@ var cfgFile string
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "findDublicate",
-	Short: "A best CLI for delete dublicate files.",
+	Use:   "findDuplicate",
+	Short: "A best CLI for delete duplicate files.",
 
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
@@ -63,9 +63,9 @@ func initConfig() {
 			os.Exit(1)
 		}
 
-		// Search config in home directory with name ".findDublicate" (without extension).
+		// Search config in home directory with name ".findDuplicate" (without extension).
 		viper.AddConfigPath(home)
-		viper.SetConfigName(".findDublicate")
+		viper.SetConfigName(".findDuplicate")
 	}
 
 	viper.AutomaticEnv() // read in environment variables that match
