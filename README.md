@@ -1,4 +1,3 @@
-# find-duplicates
 # Nedir ? 
 find-duplicates terminal üzerinde çalışan, belirtildiği hedef alandaki tekrarlı dosyaları bulup silinmesini sağlayan basit bir komuttur. 
 
@@ -148,8 +147,31 @@ Total Deleted Files : 24
 Eski çıktıdan tek farkı burada toplam silinen dosya sayısının da bulunmasıdır.  
 **Total Deleted Files**: Silinen kopya dosyaları ifade eder. 
 
+---
+#### Author
 
+Mevcut author bilgisini görebilmek istiyorsanız, aşağıdaki komutu çalıştırın. 
+```
+find-duplicates author
+```
 
+#### Version
 
+Mevcut version bilgisini görebilmek istiyorsanız, aşağıdaki komutu çalıştırın. 
+```
+find-duplicates version
+```
 
+#### License
 
+Mevcut lisans bilgisini görebilmek istiyorsanız, aşağıdaki komutu çalıştırın. 
+```
+find-duplicates license
+```
+
+#### Help
+
+Mevcut tüm komutları görebilmek istiyorsanız help komutunu kullanabilirsiniz.
+```
+find-duplicates help
+```
