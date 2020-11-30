@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "findDublicate/cmd"
+import "find-duplicates/cmd"
 
 func main() {
 	cmd.Execute()
