@@ -34,7 +34,7 @@ Projeyi çalıştırın.
 A best CLI for delete duplicate files.
 
 Usage:
-  findDuplicate [command]
+  find-duplicates [command]
 
 Available Commands:
   author      This command will return author of this project.
@@ -44,9 +44,9 @@ Available Commands:
   version     This command will return project version.
 
 Flags:
-  -h, --help   help for findDuplicate
+  -h, --help   help for find-duplicates
 
-Use "findDuplicate [command] --help" for more information about a command.
+Use "find-duplicates [command] --help" for more information about a command.
 
 ```
 ### Adım 5 (Opsiyonel)
